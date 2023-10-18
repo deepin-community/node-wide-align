@@ -6,20 +6,19 @@ Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
 Build-Depends:
  debhelper-compat (= 13)
- , nodejs
+ , dh-sequence-nodejs
  , node-string-width <!nocheck>
  , node-tap <!nocheck>
- , pkg-js-tools (>= 0.9.8)
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-wide-align
 Vcs-Git: https://salsa.debian.org/js-team/node-wide-align.git
 Homepage: https://github.com/iarna/wide-align#readme
+Rules-Requires-Root: no
 
 Package: node-wide-align
 Architecture: all
 Depends:
  ${misc:Depends}
- , nodejs
  , node-string-width
 Description: Wide-character aware text alignment function
  Wide-character aware text alignment function for use on the console or with
